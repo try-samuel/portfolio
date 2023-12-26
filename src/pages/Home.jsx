@@ -1,24 +1,32 @@
 import Navbar from "./components/general/Navbar.jsx";
 import Contact from "./components/home/Contact.jsx";
-import { CiLocationOn } from "react-icons/ci";
+import { CiLocationOn, CiCircleInfo } from "react-icons/ci";
+import { VscRemote } from "react-icons/vsc";
 
 const Home = () => {
   return (
-    <div className="text-white py-16 px-4 select-none">
+    <div className="text-white py-16 px-5 select-none">
       <Navbar />
-      <h1 className="mt-3 md:text-4xl lg:text-7xl font-bold">
-        FULL-STACK WEB DEVELOPER
-      </h1>
-      <div className="flex flex-wrap mt-36">
-        <div className="flex md:w-20 sm:w-full mr-40 text-gray-400 ">
-          <CiLocationOn className="mr-2 text-green-600" />
-          <h3 className="">Nigeria</h3>
+      <div className="flex flex-wrap xs:mt-48 md:mt-44 lg:mt-96">
+        <div className="md:w-auto xs:w-full md:mr-40 lg:mb-20 xs:mb-11 lg:text-sm sm:text-xs text-white">
+          <p className="flex items-center">
+            <CiCircleInfo className="mr-2" />
+            Full Stack Web Developer
+          </p>
+          <p className="flex items-center">
+            <CiLocationOn className="mr-2" />
+            Nigeria
+          </p>
+          <p className="flex items-center">
+            <VscRemote className="mr-2" />
+            Works from anywhere
+          </p>
         </div>
-        <span className="md:w-[450px] sm:w-auto">
-          Welcome to my portfolio. Here, artistry meets functionality. Dive into
-          a curated showcase of distinctive branding and web designs, each
-          crafted to captivate and inspire.
-        </span>
+        <h1 className="md:w-[450px] lg:w-[790px] sm:w-auto sm:text-2xl md:text-3xl lg:text-5xl leading-snug font-medium">
+          <p className="text-gray-400">Hey, I am Samuel Adekunle.</p>A
+          <span className="text-green-600"> full stack web developer</span>,
+          open to onsite or remote opportunities.
+        </h1>
       </div>
       <Contact />
     </div>

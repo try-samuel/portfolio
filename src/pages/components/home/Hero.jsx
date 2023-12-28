@@ -24,7 +24,7 @@ const Hero = () => {
           to onsite & remote opportunities.
         </p>
       </div>
-      <hr className="w-full mt-5 mb-5" />
+      <hr className="w-full mt-5 mb-10" />
     </div>
   );
 };

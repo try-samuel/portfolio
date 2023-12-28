@@ -5,6 +5,7 @@ import Loader from "./components/general/Loader.jsx";
 import SelectedWorks from "./components/home/SelectedWorks.jsx";
 import Hero from "./components/home/Hero.jsx";
 import Footer from "./components/general/Footer.jsx";
+import About from "./components/home/About.jsx";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ const Home = () => {
           <Navbar />
           <Hero />
           <SelectedWorks />
+          <About />
           <Contact />
           <Footer />
         </>

@@ -8,7 +8,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 p-4">
+      <nav className="fixed top-0 left-0 right-0 p-4 z-50">
         <section className="flex bg-none justify-between text-gray-600">
           <div className="flex items-center justify-between xs:w-auto md:w-72">
             <Link

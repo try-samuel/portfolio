@@ -9,7 +9,7 @@ import weatherAppImage from "../../../assets/images/weather-app.png";
 const SelectedWorks = () => {
   return (
     <section id="works">
-      <h1 className="text-xl mb-5 capitalize">selected works</h1>
+      <h1 className="text-2xl mb-5 capitalize font-bold">selected works</h1>
       <div className="grid gap-10 xs:grid-cols-1 lg:grid-cols-2 xs:grid-rows-6 lg:grid-rows-3">
         <WorkCard
           title={"Sardion Care"}

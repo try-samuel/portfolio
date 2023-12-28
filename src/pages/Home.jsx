@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Loader from "./components/general/Loader.jsx";
 import SelectedWorks from "./components/home/SelectedWorks.jsx";
 import Hero from "./components/home/Hero.jsx";
+import Footer from "./components/general/Footer.jsx";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="text-white py-16 px-5 select-none">
+    <div className="text-white py-12 px-5 select-none">
       {loading ? (
         <Loader timeout={2000} />
       ) : (
@@ -26,6 +27,7 @@ const Home = () => {
           <Hero />
           <SelectedWorks />
           <Contact />
+          <Footer />
         </>
       )}
     </div>

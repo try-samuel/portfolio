@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Works from "./pages/Works";
+import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/works" element={<Works />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 }

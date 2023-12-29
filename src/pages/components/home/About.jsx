@@ -17,14 +17,50 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section id="services" className="mt-20">
-        <div>
-          <h1 className="text-gray-600">SERVICES</h1>
+      <section
+        id="services"
+        className="mt-20 mb-10 flex xs:flex-wrap lg:flex-nowrap xs:w-full md:w-3/4 justify-between"
+      >
+        <div className="xs:w-full md:w-1/3">
+          <h1 className="text-gray-600 text-sm xs:mr-2 lg:mr-0 mb-2">
+            SERVICES
+          </h1>
         </div>
-        <div></div>
+        <div className="xs:w-full md:w-2/3 grid grid-cols-2 auto-rows-auto justify-between">
+          <div className="text-sm">
+            <p>Web Development</p>
+            <p>Web Design</p>
+            <p>User Research</p>
+          </div>
+          <div className="text-sm">
+            <p>System Design</p>
+            <p>Web Hosting</p>
+            <p>Graphics Design</p>
+          </div>
+        </div>
       </section>
-      <section id="experience"></section>
-      <section id="skills"></section>
+      <section id="experience" className="mt-20 mb-10">
+        <div className="">
+          <h1 className="text-gray-600 text-sm xs:mr-2 lg:mr-0 mb-2">
+            EXPERIENCE
+          </h1>
+        </div>
+        <div className="">
+          <div className="text-sm">
+            <p>Web Development</p>
+            <p>Web Design</p>
+            <p>User Research</p>
+          </div>
+          <div className="text-sm">
+            <p>System Design</p>
+            <p>Web Hosting</p>
+            <p>Graphics Design</p>
+          </div>
+        </div>
+      </section>
+      {/* <section id="skills">
+        <h1 className="text-gray-600">SKILLS</h1>
+      </section> */}
       <hr className="w-full mt-5 mb-5" />
     </section>
   );

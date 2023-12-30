@@ -26,7 +26,7 @@ const SelectedWorks = () => {
         <WorkCard
           title={"Book-Store"}
           description={"Web-App"}
-          link={"https://bookstore-frontend-8b7pxtybn-weird-samuel.vercel.app/"}
+          link={"https://bookstore-frontend-livid.vercel.app/"}
           image={bookstoreImage}
         />
         <WorkCard

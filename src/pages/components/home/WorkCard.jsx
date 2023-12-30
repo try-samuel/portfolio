@@ -13,7 +13,7 @@ const WorkCard = ({ image, title, description, link }) => {
         <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 ease-in-out duration-300">
           <button
             className="flex items-center bg-black bg-opacity-50 backdrop-blur-10 rounded-full p-3 font-normal"
-            onClick={() => window.open(link, "_self")}
+            onClick={() => window.open(link, "_blank")}
           >
             <FiEye className="mr-2" />
             VIEW PROJECT

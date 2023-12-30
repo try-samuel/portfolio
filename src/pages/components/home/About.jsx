@@ -19,49 +19,67 @@ const About = () => {
       </section>
       <section
         id="services"
-        className="mt-20 mb-10 flex xs:flex-wrap lg:flex-nowrap xs:w-full md:w-3/4 justify-between"
+        className="mt-20 mb-10 flex xs:flex-wrap lg:flex-nowrap xs:w-full md:w-3/4 justify-between xs:text-sm lg:text-[16px]"
       >
         <div className="xs:w-full md:w-1/3">
-          <h1 className="text-gray-600 text-sm xs:mr-2 lg:mr-0 mb-2">
-            SERVICES
-          </h1>
+          <h1 className="text-gray-600 xs:mr-2 lg:mr-0 mb-2">SERVICES</h1>
         </div>
         <div className="xs:w-full md:w-2/3 grid grid-cols-2 auto-rows-auto justify-between">
-          <div className="text-sm">
-            <p>Web Development</p>
-            <p>Web Design</p>
-            <p>User Research</p>
+          <div>
+            <p className="mb-3">Web Development</p>
+            <p className="mb-3">Web Design</p>
+            <p className="mb-3">User Research</p>
           </div>
-          <div className="text-sm">
-            <p>System Design</p>
-            <p>Web Hosting</p>
-            <p>Graphics Design</p>
-          </div>
-        </div>
-      </section>
-      <section id="experience" className="mt-20 mb-10">
-        <div className="">
-          <h1 className="text-gray-600 text-sm xs:mr-2 lg:mr-0 mb-2">
-            EXPERIENCE
-          </h1>
-        </div>
-        <div className="">
-          <div className="text-sm">
-            <p>Web Development</p>
-            <p>Web Design</p>
-            <p>User Research</p>
-          </div>
-          <div className="text-sm">
-            <p>System Design</p>
-            <p>Web Hosting</p>
-            <p>Graphics Design</p>
+          <div>
+            <p className="mb-3">System Design</p>
+            <p className="mb-3">Web Hosting</p>
+            <p className="mb-3">Graphics Design</p>
           </div>
         </div>
       </section>
-      {/* <section id="skills">
-        <h1 className="text-gray-600">SKILLS</h1>
-      </section> */}
-      <hr className="w-full mt-5 mb-5" />
+      <section
+        id="experience"
+        className="mt-20 mb-10 flex xs:flex-wrap lg:flex-nowrap xs:w-full justify-between xs:text-sm lg:text-[16px]"
+      >
+        <div>
+          <h1 className="text-gray-600 xs:mr-2 lg:mr-0 mb-2">EXPERIENCE</h1>
+        </div>
+        <div className="xs:w-full md:w-3/4 items-center">
+          <div className="border-b border-gray-600 w-full flex flex-wrap justify-between mb-5 py-2">
+            <p className="xs:w-full md:w-1/3">Freelanace Fullstack Developer</p>
+            <p className="xs:w-full md:w-1/3">Sardion Care</p>
+            <p className="xs:w-full md:w-1/3">Jun 2023 - Jul 2023</p>
+          </div>
+          <div className="border-b border-gray-600 w-full flex flex-wrap justify-between mb-5 py-2">
+            <p className="xs:w-full md:w-1/3">DevOps Engineer</p>
+            <p className="xs:w-full md:w-1/3">Sardion Care</p>
+            <p className="xs:w-full md:w-1/3">Jul 2023 - present</p>
+          </div>
+          <div className="border-b border-gray-600 w-full flex flex-wrap justify-between mb-5 py-2">
+            <p className="xs:w-full md:w-1/3">
+              Full Stack Web Developer Intern
+            </p>
+            <p className="xs:w-full md:w-1/3">Alusoft Technologies</p>
+            <p className="xs:w-full md:w-1/3">Jan 2023 - Jun 2023</p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="educaation"
+        className="mt-20 mb-10 flex xs:flex-wrap lg:flex-nowrap xs:w-full justify-between xs:text-sm lg:text-[16px]"
+      >
+        <div>
+          <h1 className="text-gray-600 xs:mr-2 lg:mr-0 mb-2">EDUCATION</h1>
+        </div>
+        <div className="xs:w-full md:w-3/4 items-center">
+          <div className="border-b border-gray-600 w-full flex flex-wrap justify-between mb-5 py-2">
+            <p className="xs:w-full md:w-1/3">BSc Computer Science</p>
+            <p className="xs:w-full md:w-1/3">Babcock University</p>
+            <p className="xs:w-full md:w-1/3">Oct 2020 - Present</p>
+          </div>
+        </div>
+      </section>
+      <hr className="w-full h-[1px] mt-10 mb-10" />
     </section>
   );
 };

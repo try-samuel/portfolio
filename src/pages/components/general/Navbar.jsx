@@ -31,21 +31,21 @@ const Navbar = () => {
           <div className="flex xs:w-[160px] sm:w-[200px] md:w-[220px] justify-between">
             <Link>
               <ScrollIntoView selector="#works">
-                <span className="xs:text-[10px] md:text-base uppercase hover:text-gray-400 transition-colors">
+                <span className="xs:text-[12px] md:text-base uppercase hover:text-gray-400 transition-colors">
                   Works
                 </span>
               </ScrollIntoView>
             </Link>
             <Link>
               <ScrollIntoView selector="#about">
-                <span className="xs:text-[10px] md:text-base uppercase hover:text-gray-400 transition-colors">
+                <span className="xs:text-[12px] md:text-base uppercase hover:text-gray-400 transition-colors">
                   About
                 </span>
               </ScrollIntoView>
             </Link>
             <Link>
               <ScrollIntoView selector="#contact">
-                <span className="xs:text-[10px] md:text-base uppercase hover:text-gray-400 transition-colors">
+                <span className="xs:text-[12px] md:text-base uppercase hover:text-gray-400 transition-colors">
                   Contact
                 </span>
               </ScrollIntoView>

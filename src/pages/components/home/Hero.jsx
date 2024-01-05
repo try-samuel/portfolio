@@ -18,9 +18,9 @@ const Hero = () => {
         </p>
       </div>
       <div className="sm:w-auto md:w-[450px] lg:w-[790px] sm:text-2xl md:text-3xl lg:text-5xl font-semi-bold">
-        <p className="text-gray-400">Hey, I am Samuel Adekunle.</p>
+        <p className="">Hey, I am Samuel Adekunle.</p>
         <p className="mt-1">
-          A<span className="text-red-600"> full stack web developer</span>, open
+          A<span className="text-white"> full stack web developer</span>, open
           to onsite & remote opportunities.
         </p>
       </div>

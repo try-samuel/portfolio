@@ -19,7 +19,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container align-center justify-center text-white py-12 px-5 select-none">
+    <div className="text-white py-12 px-5 select-none">
       {loading ? (
         <Loader timeout={2000} />
       ) : (

@@ -16,17 +16,17 @@ export default function MobileTopBar() {
     { title: "Experience", href: "#experience" }, // Navigation item for experience
     { title: "Hire Me", href: "#hire" }, // Navigation item for hire me
   ];
-  const ddd = (
+  const navComp = (
     <>
       <div
-        className={`w-full text-sm leading-5 font-medium ${OverusedGrotesk.className}`}
+        className={`w-full text-md leading-5 font-medium ${OverusedGrotesk.className}`}
       >
         {/* Render navigation links */}
         {navItems.map((item, index) => (
           <Link
             key={index}
             href={item.href}
-            className={`hover:text-[#7e7e97] transition-all duration-300 ${
+            className={`hover:text-[#7e7e97] transition-all duration-300 w-24 ${
               pathname === item.href ? "text-[#7e7e97]" : ""
             } block py-4 text-lg`}
           >
@@ -40,22 +40,22 @@ export default function MobileTopBar() {
 
   return (
     <section
-      className={
-        isOpen ? "w-full h-1/2 bg-[#F5F8FD] z-10 fixed dark:bg-[#09090B]" : ""
-      }
+      className={`fixed top-0 left-0 right-0 w-full bg-[#F5F8FD] dark:bg-[#09090B] ${
+        isOpen ? "h-1/2" : ""
+      }`}
     >
       <div
         className={`${
           isOpen ? "w-[85%]" : ""
-        } py-8 mb-20 mx-auto items-center transition-all duration-500 container`}
+        } py-2 mx-auto items-center transition-all duration-500 container`}
       >
-        <div className="flex w-full justify-between">
+        <div className={`flex w-full justify-between ${isOpen ? "mb-10" : ""}`}>
           <Link href={"/"}>lOgO</Link> {/* Link to the homepage */}
           <button onClick={toggle}>
             {isOpen ? <HiOutlineXMark size={25} /> : <HiBars3 size={25} />}
           </button>
         </div>
-        {isOpen ? ddd : ""}
+        {isOpen ? navComp : ""}
       </div>
     </section>
   );

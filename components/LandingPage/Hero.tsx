@@ -1,4 +1,5 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
+import HeroSlider from "../ui/hero-slider";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
@@ -13,9 +14,10 @@ export default function Hero() {
         A Freelance Full stack web developer with keen interest in front-end
         development.
       </p>
-      <button className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-500">
+      <button className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-500 mb-10">
         Hire Me <AiOutlineArrowRight />
       </button>
+      {window.innerWidth > 600 ? null : <HeroSlider />}
     </section>
   );
 }

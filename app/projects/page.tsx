@@ -12,8 +12,9 @@ export default function ProjectsPage() {
         // If the user is on a mobile device, render the MobileTopBar component
         isMobile ? <MobileTopBar /> : <TopBar />
       }
-
-      <h1>General Projects page!</h1>
+      <section className="pt-52 lg:pt-10">
+        <h1>General Projects page!</h1>
+      </section>
     </main>
   );
 }

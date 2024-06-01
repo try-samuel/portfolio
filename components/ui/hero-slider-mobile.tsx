@@ -2,7 +2,7 @@ import Image from "next/image";
 import Ticker from "framer-motion-ticker";
 import { useState } from "react";
 
-export default function HeroSlider() {
+export default function MobileHeroSlider() {
   const [isPlaying, setIsPlaying] = useState(true);
   const iconUrls = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg",
@@ -18,7 +18,7 @@ export default function HeroSlider() {
 
   return (
     <Ticker
-      duration={20}
+      duration={5}
       onMouseEnter={() => setIsPlaying(false)}
       onMouseLeave={() => setIsPlaying(true)}
       isPlaying={isPlaying}
@@ -28,7 +28,7 @@ export default function HeroSlider() {
           className="rounded-xl bg-[#FFFFFF] dark:bg-[#1a1a23]"
           key={index}
           style={{
-            margin: "10px 50px",
+            margin: "10px 10px",
             height: "80px",
             width: "80px",
             justifyContent: "center",

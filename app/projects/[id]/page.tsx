@@ -12,7 +12,9 @@ export default function IndividualProject() {
         // If the user is on a mobile device, render the MobileTopBar component
         isMobile ? <MobileTopBar /> : <TopBar />
       }
-      <h1>Hello, world!</h1>
+      <section className="pt-52 lg:pt-10">
+        <h1>Hello, world!</h1>
+      </section>
     </main>
   );
 }

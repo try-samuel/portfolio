@@ -40,14 +40,14 @@ export default function MobileTopBar() {
 
   return (
     <section
-      className={`fixed top-0 left-0 right-0 w-full bg-[#F5F8FD] dark:bg-[#09090B] ${
+      className={`fixed top-0 left-0 right-0 w-full bg-[#F5F8FD] dark:bg-[#09090B] z-50 ${
         isOpen ? "h-1/2" : ""
       }`}
     >
       <div
         className={`${
           isOpen ? "w-[85%]" : ""
-        } py-2 mx-auto items-center transition-all duration-500 container`}
+        } py-6 mx-auto items-center transition-all duration-500 container z-10`}
       >
         <div className={`flex w-full justify-between ${isOpen ? "mb-10" : ""}`}>
           <Link href={"/"}>lOgO</Link> {/* Link to the homepage */}

@@ -17,7 +17,7 @@ export default function Hero() {
         A Freelance Full stack web developer with keen interest in front-end
         development.
       </p>
-      <button className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-500 mb-10">
+      <button className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-300 mb-10 ease-in">
         Hire Me <AiOutlineArrowRight />
       </button>
       <div className="my-10">

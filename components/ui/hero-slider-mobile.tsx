@@ -25,7 +25,7 @@ export default function MobileHeroSlider() {
     >
       {iconUrls.map((item, index) => (
         <div
-          className="rounded-xl bg-[#FFFFFF] dark:bg-[#1a1a23]"
+          className="rounded-xl bg-[#FFFFFF] dark:bg-[#1a1a23] cursor-pointer"
           key={index}
           style={{
             margin: "10px 10px",

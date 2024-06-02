@@ -10,7 +10,7 @@ export default function Home() {
   const isMobile = useIsMobile(); // Check if the user is on a mobile device
 
   return (
-    <main className="">
+    <main className="cursor-default">
       {
         // If the user is on a mobile device, render the MobileTopBar component
         isMobile ? <MobileTopBar /> : <TopBar />

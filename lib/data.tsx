@@ -26,6 +26,25 @@ export const education = [
   },
 ];
 
+export const socialLinks = [
+  {
+    name: "GitHub",
+    link: "https://github.com/weird-samuel",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/samuel-adekunle-a995a8213/",
+  },
+  {
+    name: "X",
+    link: "https://x.com/weird_samuell",
+  },
+  {
+    name: "Email",
+    link: "mailto:fiyinfoluwasamuel580@gmail.com",
+  },
+];
+
 export const skills = [
   "TypeScript/JavaScript",
   "NextJS/React",
@@ -54,69 +73,5 @@ export const projects = [
       "PostgreSQL",
       "Prisma",
     ],
-  },
-  {
-    title: "Monko (WIP)",
-    description:
-      "simple experimental interpreter built in Golang, mostly for research on lexical analysis and token parsing",
-    type: "Side Project",
-    link: "",
-    technologies: ["Golang"],
-  },
-  {
-    title: "Alma",
-    description: "Online community hub for university students",
-    type: "Side Project",
-    technologies: ["NextJS", "TailwindCSS", "PostgreSQL", "Redis", "Docker"],
-  },
-  {
-    title: "Accord",
-    description:
-      "fullstack messaging application inspired by Discord, channel management, real-time messaging etc.",
-    type: "Final Year Project",
-    link: "https://accordingly.vercel.app/",
-    technologies: [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "PostgreSQL",
-      "Prisma",
-    ],
-  },
-
-  {
-    title: "oluwasijibomi.me",
-    description: "My personal website and blog. Built with Next.js ",
-    type: "Side Project",
-    technologies: ["Next.js", "MDX", "TailwindCSS"],
-  },
-  {
-    title: "Tidy",
-    description: "CLI application for organization and task tracking",
-    type: "Side Project",
-    link: "https://github.com/sijirama/tidy",
-    technologies: ["GoLang", "SQlite", "BubbleTea"],
-  },
-  {
-    title: "LRU",
-    description: "LRU cache implemented in golang",
-    type: "Side Project",
-    technologies: ["Golang"],
-  },
-
-  {
-    title: "Chip*",
-    description: "Simple chip8 emulator built with javascript.",
-    type: "Side Project",
-    link: "https://sijirama.github.io/chip8/",
-    technologies: ["JavaScript"],
-  },
-  {
-    title: "Particles",
-    description:
-      "research repository for particle life cycles under various conditions.",
-    type: "Side Project",
-    link: "https://sijirama.github.io/particles/",
-    technologies: ["JavaScript"],
   },
 ];

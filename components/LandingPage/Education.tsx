@@ -26,9 +26,8 @@ export default function Education({
               <h3 className="text-[16px]">{education.location}</h3>
             </div>
             <h2 className="text-[20px] font-medium capitalize">
-              {education.degree}
+              {education.degree}, {education.school}
             </h2>
-            <p className="text-[16px] mb-10">{education.school}</p>
           </div>
         ))}
       </div>

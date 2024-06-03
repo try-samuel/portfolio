@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { OverusedGrotesk } from "@/lib/fonts";
 import { HiBars3, HiOutlineXMark } from "react-icons/hi2";
 import { useState } from "react";
+import Logo from "../ui/logo";
 
 export default function MobileTopBar() {
   const pathname = usePathname(); // Get the current pathname
@@ -14,7 +15,7 @@ export default function MobileTopBar() {
   const navItems: { title: string; href: string }[] = [
     { title: "Projects", href: "/projects" }, // Navigation item for projects
     { title: "Experience", href: "#experience" }, // Navigation item for experience
-    { title: "Hire Me", href: "#hire" }, // Navigation item for hire me
+    { title: "Hire Me", href: "mailto:fiyinfoluwasamuel580@gmail.com" }, // Navigation item for hire me
   ];
   const navComp = (
     <>
@@ -50,7 +51,7 @@ export default function MobileTopBar() {
         } py-6 mx-auto items-center transition-all duration-500 container z-10`}
       >
         <div className={`flex w-full justify-between ${isOpen ? "mb-10" : ""}`}>
-          <Link href={"/"}>lOgO</Link> {/* Link to the homepage */}
+          <Logo />
           <button onClick={toggle}>
             {isOpen ? <HiOutlineXMark size={25} /> : <HiBars3 size={25} />}
           </button>

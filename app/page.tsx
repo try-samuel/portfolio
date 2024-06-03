@@ -4,6 +4,7 @@ import Education from "@/components/LandingPage/Education";
 import { Experiences } from "@/components/LandingPage/Experiences";
 import { Projects } from "@/components/LandingPage/FourProjects";
 import Hero from "@/components/LandingPage/Hero";
+import Footer from "@/components/common/Footer";
 import MobileTopBar from "@/components/common/MobileTopBar";
 import TopBar from "@/components/common/TopBar";
 import HeroSlider from "@/components/ui/hero-slider";
@@ -61,6 +62,7 @@ export default function Home() {
         />
         <Experiences experiences={expereince} />
         <Education educations={education} />
+        <Footer />
       </section>
     </main>
   );

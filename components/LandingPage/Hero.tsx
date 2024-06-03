@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
@@ -12,9 +13,13 @@ export default function Hero() {
         A Freelance Full stack web developer with keen interest in front-end
         development.
       </p>
-      <button className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-300 mb-10 ease-in">
+      <Link
+        href={"mailto:fiyinfoluwasamuel580@gmail.com"}
+        target="_blank"
+        className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-300 mb-10 ease-in w-32"
+      >
         Hire Me <AiOutlineArrowRight />
-      </button>
+      </Link>
     </section>
   );
 }

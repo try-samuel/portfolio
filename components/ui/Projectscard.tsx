@@ -39,15 +39,15 @@ const ProjectCard = ({
   return (
     <Link href={item.link} className="group">
       <div
-        className="relative h-[300px] lg:h-[500px] rounded-3xl md:rounded-[50px] bg-black overflow-hidden"
+        className="relative h-[300px] lg:h-[400px] rounded-3xl bg-black overflow-hidden"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
         <Image
           src={item.image}
           alt={item.title}
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
         />
         <div className="circle" style={circleStyle}>
           VISIT
@@ -58,7 +58,7 @@ const ProjectCard = ({
           <h1 className="text-[24px] font-medium">{item.title}</h1>
           <p className="text-[16px]">{item.description}</p>
         </div>
-        <button className="text-sm border border-[#7e7e97] rounded-md px-6 py-3 group-hover:bg-[#7e7e97] group-hover:text-[#09090B] transition-all duration-300 mb-10 ease-in">
+        <button className="text-lg font-bold border dark:text-[#BFBFC6] border-[#060608] dark:border-[#BFBFC6] rounded-md px-6 py-3 group-hover:bg-[#060608] dark:group-hover:bg-[#BFBFC6] text-[#BFBFC6] dark:group-hover:text-[#060608] transition-all duration-300 mb-10">
           <AiOutlineArrowRight />
         </button>
       </div>

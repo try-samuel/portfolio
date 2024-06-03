@@ -80,7 +80,7 @@
   position: absolute;
   width: 70px;
   height: 70px;
-  border: 2px solid white;
+  border: 1.5px solid white;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);

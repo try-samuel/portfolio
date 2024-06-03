@@ -1,11 +1,6 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
-import MobileHeroSlider from "../ui/hero-slider-mobile";
-import HeroSlider from "../ui/hero-slider";
-import useIsMobile from "@/hooks/useIsMobile";
-
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
-  const isMobile = useIsMobile();
   return (
     <section className="lg:px-8 pt-52 lg:pt-10">
       <h1 className={`text-2xl font-normal leading-[30px] font-sans mb-5`}>
@@ -20,9 +15,6 @@ export default function Hero() {
       <button className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-300 mb-10 ease-in">
         Hire Me <AiOutlineArrowRight />
       </button>
-      <div className="my-10">
-        {isMobile ? <MobileHeroSlider /> : <HeroSlider />}
-      </div>
     </section>
   );
 }

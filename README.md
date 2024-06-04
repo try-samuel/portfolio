@@ -1,55 +1,36 @@
-# My Portfolio
-
-Welcome to my personal portfolio repository! This project showcases some of my skills and projects, providing an overview of my journey in the world of web development.
-
-## Technologies Used
-
-- **React:** The core of the application is built using React, enabling the creation of dynamic and responsive user interfaces.
-- **React Router:** Utilized for seamless navigation between different sections of the portfolio.
-- **Axios:** A popular HTTP client for making requests to external APIs, used to fetch and display data.
-- **Notistack:** A notification library for React that enhances the user experience with customizable notifications.
-- **React Icons:** A collection of popular icons as React components, enhancing the visual appeal of the portfolio.
-- **Tailwind CSS:** A utility-first CSS framework used for styling, providing a modern and clean design.
-- **Vite:** A fast build tool for modern web development, optimizing the development and production workflow.
-
-## Project Structure
-
-The project is structured with Vite as the build tool. Here are the key scripts available:
-
-- `dev:` Run the development server using Vite.
-- `build:` Build the project for production.
-- `lint:` Lint the project using ESLint with React-specific rules.
-- `preview:` Preview the production build locally.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-1. **Clone the repository after forking:** `git clone https://github.com/your-username/portfolio.git`
-2. **Install dependencies:** `npm install`
-3. **Run the development server:** `npm run dev`
-4. **Open your browser and visit:** [http://localhost:3000](http://localhost:3000) to see the portfolio in action.
+First, run the development server:
 
-## Dependencies
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **React:** The core library for building user interfaces.
-- **React DOM:** Provides DOM-specific methods for working with the DOM tree.
-- **Axios:** A promise-based HTTP client for the browser and Node.js.
-- **Notistack:** A notification library for React.
-- **React Icons:** A collection of popular icons for React applications.
-- **React Router DOM:** Declarative routing for React.js.
-- **React Scroll Into View:** A React wrapper for the `scroll-into-view-if-needed` library.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Dev Dependencies
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **@types/react:** TypeScript type definitions for React.
-- **@types/react-dom:** TypeScript type definitions for React DOM.
-- **@vitejs/plugin-react:** Vite plugin for React support.
-- **Autoprefixer:** A PostCSS plugin to parse CSS and add vendor prefixes.
-- **ESLint:** A pluggable JavaScript linter.
-- **ESLint React:** ESLint rules for React-specific code.
-- **ESLint React Hooks:** ESLint rules for React Hooks.
-- **ESLint React Refresh:** ESLint plugin for React Refresh.
-- **PostCSS:** A tool for transforming CSS with JavaScript plugins.
-- **Tailwind CSS:** A utility-first CSS framework.
-- **Vite:** A fast build tool for modern web development.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Feel free to explore the code and adapt it to suit your needs. If you have any questions or suggestions, feel free to reach out! Happy coding!
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

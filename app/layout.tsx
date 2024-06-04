@@ -4,11 +4,14 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import { InterTight } from "@/lib/fonts";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Samuel Adekunle - Full Stack Software Engineer",
   description:
     "Software Engineer, Full Stack Web Developer, and Open Source Enthusiast",
+  keywords:
+    "samuel, adekunle fiyinfoluwa, Fiyinfoluwa, SamuelFiyinfoluwa, Adekunle Fiyinfoluwa, Samuel Adekunle FiyinfoluwaSamuel Adekunle, Full Stack Developer, Software Engineer, Open Source Enthusiast",
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { InterTight } from "@/lib/fonts";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "Samuel Adekunle - Full Stack Software Engineer",
@@ -40,7 +42,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main>{children}</main>
+          <Suspense fallback={<Loading />}>
+            <main>{children}</main>
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>

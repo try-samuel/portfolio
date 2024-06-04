@@ -12,11 +12,13 @@ export default function MobileTopBar() {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
   const navItems: { title: string; href: string }[] = [
-    { title: "Projects", href: "/projects" }, // Navigation item for projects
-    { title: "Experience", href: "#experience" }, // Navigation item for experience
-    { title: "Hire Me", href: "mailto:fiyinfoluwasamuel580@gmail.com" }, // Navigation item for hire me
+    { title: "Projects", href: "/projects" },
+    // Conditionally add the "Experience" nav item
+    { title: "Hire Me", href: "mailto:fiyinfoluwasamuel580@gmail.com" },
   ];
+
   const navComp = (
     <>
       <div

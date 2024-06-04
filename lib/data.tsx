@@ -46,7 +46,7 @@ export const socialLinks = [
 ];
 
 export const skills = [
-  "TypeScript/JavaScript",
+  "TS/JS",
   "NextJS/React",
   "Node.Js",
   "TailwindCSS",
@@ -57,21 +57,89 @@ export const skills = [
   "Git/Github",
   "Neovim/Vim",
   "Linux",
+  "and more...",
 ];
 
 export const projects = [
   {
-    title: "Bauble",
+    title: "SarionCare",
+    description: "A website for a Canadian Foster care company.",
+    link: "https://sardioncare.ca",
+    technologies: ["Javascript", "Ejs", "CSS", "Node.JS", "Express", "..."],
+  },
+  {
+    title: "My Portfolio",
     description:
-      "Streamlining university project management for student groups and ensures an efficient project experience.",
-    type: "Final Year Project",
-    link: "https://baublespace.vercel.app/",
+      "A personal portfolio website showcasing my projects, skills, and experiences.",
+    link: "https://adekunlesamuel.me",
+    technologies: ["TypeScript", "Next.js", "TailwindCSS"],
+  },
+  {
+    title: "BMZ",
+    description: "comning soon...",
+    link: "",
     technologies: [
       "TypeScript",
       "Next.js",
       "TailwindCSS",
-      "PostgreSQL",
-      "Prisma",
+      "prisma",
+      "postgresql",
+      "docker",
+      "...",
+    ],
+  },
+  {
+    title: "Acme",
+    description: "A fictional e-commerce website built with Next.js, to learn",
+    link: "https://acme-gamma-five.vercel.app/",
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "husky",
+      "zod",
+      "postgresql",
+      "...",
+    ],
+  },
+  {
+    title: "QuickChat",
+    description: "A real-time chat application.",
+    link: "https://github.com/weird-samuel/QuickChat",
+    technologies: ["JavaScript", "Node.js", "React", "axios", "..."],
+  },
+  {
+    title: "E-commerce-frontend",
+    description:
+      "A frontend for an e-commerce website built with React.js, to learn.",
+    link: "https://github.com/weird-samuel/E-commerce-frontend",
+    technologies: ["JavaScript", "React", "axios", "..."],
+  },
+  {
+    title: "Aporvis-Client",
+    description: "Frontend for final year project at Babcock University",
+    link: "https://aporvs-client.vercel.app/",
+    technologies: ["JavaScript", "React", "TailwindCSS", "axios", "..."],
+  },
+  {
+    title: "Aporvis-Server",
+    description: "Backend for final year project at Babcock University",
+    link: "https://github.com/weird-samuel/Aporvis-Server",
+    technologies: ["TypeScript", "Node.js", "Express", "MongoDB", "..."],
+  },
+  {
+    title: "NerfedFlix",
+    description:
+      "A Netflix clone built with React.js, to master api consumption.",
+    link: "https://nerfed-flix-s3db.vercel.app/",
+    technologies: [
+      "JavaScript",
+      "React",
+      "TailwindCSS",
+      "firebase",
+      "axios",
+      "notistack",
+      "...",
     ],
   },
 ];

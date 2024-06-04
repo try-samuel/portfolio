@@ -47,6 +47,7 @@ const ProjectCard = ({
           src={item.image}
           alt={item.title}
           fill
+          priority
           className="object-cover"
         />
         <div className="circle" style={circleStyle}>

@@ -12,7 +12,8 @@ export default function Footer() {
   return (
     <section className="space-y-10 my-10 mt-20">
       <Link
-        href={"/hire-me"}
+        href={"mailto:fiyinfoluasamuel580@gmail.com"}
+        target="_blank"
         className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-1/2 lg:w-full"
       >
         <div>
@@ -41,7 +42,7 @@ export default function Footer() {
         <Logo />
         <div className="text-[#61616E] dark:text-[#545460]">
           <span className="mr-3">
-            &copy; <span className="text-[#BFBFC6]">Adekunle Samuel</span>
+            &copy; <span className="text-[#BFBFC6]">Samuel Adekunle</span>
           </span>
           {date}
         </div>

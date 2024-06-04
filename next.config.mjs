@@ -12,7 +12,18 @@ const nextConfig = {
         hostname: "i.pinimg.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "ghchart.rshah.org",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+        port: "",
+      },
     ],
+    dangerouslyAllowSVG: true,
   },
 };
 

@@ -102,12 +102,12 @@
   }
 
   50% {
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
   }
 }
 
 .svg {
-  animation: rotate 4.5s infinite ease-in-out;
+  animation: rotate 4.2s infinite ease-in-out;
 }
 
 .svg:hover {

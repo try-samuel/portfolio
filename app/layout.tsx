@@ -7,6 +7,9 @@ import Loading from "./loading";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "HDb2dsjLBi3lImDn2k9q8ju14x0VTq9z-vkJkEFYZ5Y",
+  },
   title: "Samuel Adekunle - Full Stack Software Engineer",
   description:
     "Software Engineer, Full Stack Web Developer, and Open Source Enthusiast",

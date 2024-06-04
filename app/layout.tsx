@@ -12,6 +12,13 @@ export const metadata: Metadata = {
     "Software Engineer, Full Stack Web Developer, and Open Source Enthusiast",
   keywords:
     "samuel, adekunle fiyinfoluwa, Fiyinfoluwa, SamuelFiyinfoluwa, Adekunle Fiyinfoluwa, Samuel Adekunle FiyinfoluwaSamuel Adekunle, Full Stack Developer, Software Engineer, Open Source Enthusiast",
+  robots: "index, follow",
+  authors: [
+    {
+      name: "Adekunle Samuel Fiyinfoluwa",
+      url: "https://adekunlesamuel.me",
+    },
+  ],
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -6,7 +6,6 @@ import { OverusedGrotesk } from "../../lib/fonts";
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Logo from "../ui/logo";
-import ScrollIntoView from "react-scroll-into-view";
 
 // Define the TopBar component
 export default function TopBar() {

@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   verification: {
-    google: "HDb2dsjLBi3lImDn2k9q8ju14x0VTq9z-vkJkEFYZ5Y",
+    google: "LoPQr96cfszDq0ETtZIr5zkfxpAGEK4XV-cbkzNfUpQ",
   },
   title: "Samuel Adekunle - Full Stack Software Engineer",
   description:

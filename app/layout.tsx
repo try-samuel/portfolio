@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   verification: {
     google: "LoPQr96cfszDq0ETtZIr5zkfxpAGEK4XV-cbkzNfUpQ",
   },
-  title: "Samuel Adekunle - Full Stack Software Engineer",
+  title: "Adekunle Samuel Fiyinfoluwa",
   description:
     "Software Engineer, Full Stack Web Developer, and Open Source Enthusiast",
   keywords:

@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
-import Loading from "../loading";
 
 export const metadata: Metadata = {
   title: "Projects • Samuel Adekunle",
@@ -18,9 +16,5 @@ export default function PortfolioLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <main>
-      <Suspense fallback={<Loading />}>{children}</Suspense>
-    </main>
-  );
+  return <main>{children}</main>;
 }

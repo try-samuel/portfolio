@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { InterTight } from "@/lib/fonts";
-import { Suspense } from "react";
-import Loading from "./loading";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
@@ -55,9 +53,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Suspense fallback={<Loading />}>
-            <main>{children}</main>
-          </Suspense>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>

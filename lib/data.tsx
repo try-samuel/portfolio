@@ -89,6 +89,13 @@ export const projects = [
     ],
   },
   {
+    title: "FavJay",
+    description:
+      "Personal website for FavJay The Roadmana, a Nigerian musical artist.",
+    link: "https://favjaytrm.com",
+    technologies: ["TypeScript", "Next.js", "TailwindCSS"],
+  },
+  {
     title: "Acme",
     description: "A fictional e-commerce website built with Next.js, to learn",
     link: "https://acme-gamma-five.vercel.app/",

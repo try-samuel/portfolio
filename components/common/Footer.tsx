@@ -15,6 +15,9 @@ export default function Footer() {
         href={"mailto:fiyinfoluasamuel580@gmail.com"}
         target="_blank"
         className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-1/2 lg:w-full"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
       >
         <div>
           <h6 className="text-5xl lg:text-8xl font-medium">

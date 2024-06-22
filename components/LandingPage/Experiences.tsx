@@ -23,7 +23,14 @@ export function Experiences({ experiences }: ExperiencesProps) {
       />
       <div>
         {experiences.map((experience, index) => (
-          <div key={index} className="mt-5 w-full md:w-[95%]">
+          <div
+            key={index}
+            className="mt-5 w-full md:w-[95%]"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
             <div className="flex w-full justify-between text-[#61616E] dark:text-[#545460]">
               <h4 className="text-[16px]">{experience.period.toUpperCase()}</h4>
               <h3 className="text-[16px]">{experience.location}</h3>

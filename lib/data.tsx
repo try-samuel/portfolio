@@ -75,9 +75,9 @@ export const projects = [
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
   },
   {
-    title: "BMZ",
+    title: "Buy Me Zobo",
     description: "comning soon...",
-    link: "",
+    link: "#",
     technologies: [
       "TypeScript",
       "Next.js",
@@ -91,7 +91,7 @@ export const projects = [
   {
     title: "FavJay",
     description:
-      "Personal website for FavJay The Roadmana, a Nigerian musical artist.",
+      "Personal website for FavJay The Roadman, a Nigerian musical artist.",
     link: "https://favjaytrm.com",
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
   },

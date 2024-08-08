@@ -1,5 +1,13 @@
 export const expereince = [
   {
+    title: "Frontend Developer",
+    company_name: "Jodna Technologies",
+    period: "June - August 8, 2024",
+    description:
+      "I collaborated with a team of developers to develop an investment application from the ground up, including design, development, testing, and deployment; conducted code reviews; contributed to a website redesign; optimized performance.",
+    location: "Remote, Nigeria",
+  },
+  {
     title: "Web Developer & DevOps Engineer",
     company_name: "SardionCare Inc.",
     period: "Jun 2023 - Jul 2023",
@@ -20,7 +28,7 @@ export const expereince = [
 export const education = [
   {
     school: "Babcock Unversity",
-    degree: "Bachelor's Degree in Computer Science",
+    degree: "Bachelor's Degree in Computer Science (4.16 CGPA btw)",
     period: "Sept 2020 - July 2024",
     location: "Ilishan-Remo, Nigeria",
   },

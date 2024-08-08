@@ -26,10 +26,10 @@ export function Experiences({ experiences }: ExperiencesProps) {
           <div
             key={index}
             className="mt-5 w-full md:w-[95%]"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="1500"
+            data-aos-duration="700"
           >
             <div className="flex w-full justify-between text-[#61616E] dark:text-[#545460]">
               <h4 className="text-[16px]">{experience.period.toUpperCase()}</h4>

@@ -15,13 +15,13 @@ export default function Skills({ skills }: { skills: string[] }) {
           </span>
         ))}
       </div>
-      <div className="relative lg:w-[60%] my-5 lg:h-32">
+      {/* <div className="relative lg:w-[60%] my-5 lg:h-32">
         <Image
           src={"https://ghchart.rshah.org/weird-samuel"}
           fill
           alt="my gh chart"
         />
-      </div>
+      </div> */}
     </section>
   );
 }

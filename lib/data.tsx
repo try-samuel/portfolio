@@ -1,6 +1,20 @@
 export const expereince = [
   {
     title: "Frontend Developer",
+    company_name: "Taiwo Salam & Co. Properties LTD.",
+    period: "Aug 2024 - Present",
+    description: "Played a pivotal role in the ongoing development of an in-house project, focusing on building user interfaces and managing dynamic content display. Leveraged state management and secure authentication integration to ensure a seamless user experience. As a key member of the frontend development team, I meticulously crafted interfaces that adhered to design specifications, significantly enhancing the project speed and overall efficiency.",
+    location: "Ibadan, Nigeria",
+  },
+  {
+    title: "Web Developer",
+    company_name: "Rescue1 Youth Club",
+    period: "Aug 2024 - Present",
+    description: "Tasked with completely re-building the user interface and managing content display, I successfully revamped the website to elevate the company's visibility through an improved user interface and optimized SEO configuration. Currently engaged in ongoing efforts to enhance the overall performance and usability of the web application, ensuring a top-notch experience for users.",
+    location: "Remote, USA",
+  },
+  {
+    title: "Frontend Developer",
     company_name: "Jodna Technologies",
     period: "June - August 8, 2024",
     description:
@@ -65,6 +79,7 @@ export const skills = [
   "Git/Github",
   "Neovim/Vim",
   "Linux",
+  "Wix",
   "and more...",
 ];
 

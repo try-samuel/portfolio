@@ -54,7 +54,7 @@ export default function Home() {
       <section className="container">
         <Experiences experiences={expereince} />
         <Education educations={education} />
-        <Skills skills={skills} />
+        {/* <Skills skills={skills} /> */}
         <Footer />
       </section>
     </main>

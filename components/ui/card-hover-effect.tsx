@@ -2,6 +2,8 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { BsCodeSlash } from "react-icons/bs";
+import { IoEyeOutline } from "react-icons/io5";
 
 export const HoverEffect = ({
   items,
@@ -12,6 +14,7 @@ export const HoverEffect = ({
     description: string;
     link: string;
     technologies?: string[];
+    type: string;
   }[];
   className?: string;
 }) => {
@@ -51,7 +54,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle className="flex items-center justify-between"><span>{item.title}</span> {item.type != "live" ? <BsCodeSlash /> : <IoEyeOutline />
+            }</CardTitle>
             <CardDescription>{item.description}</CardDescription>
             {item.technologies && (
               <CardTechnologies technologies={item.technologies} />

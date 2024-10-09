@@ -89,6 +89,7 @@ export const projects = [
     description: "A website for a Canadian Foster care company.",
     link: "https://sardioncare.ca",
     technologies: ["Javascript", "Ejs", "CSS", "Node.JS", "Express", "..."],
+    type: "live"
   },
   {
     title: "My Portfolio",
@@ -96,11 +97,12 @@ export const projects = [
       "A personal portfolio website showcasing my projects, skills, and experiences.",
     link: "https://adekunlesamuel.me",
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
+    type: "live"
   },
   {
     title: "Buy Me Zobo",
     description: "comning soon...",
-    link: "#",
+    link: "",
     technologies: [
       "TypeScript",
       "Next.js",
@@ -110,6 +112,7 @@ export const projects = [
       "docker",
       "...",
     ],
+    type: "live"
   },
   {
     title: "FavJay",
@@ -117,26 +120,14 @@ export const projects = [
       "Personal website for FavJay The Roadman, a Nigerian musical artist.",
     link: "https://favjaytrm.com",
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
-  },
-  {
-    title: "Acme",
-    description: "A fictional e-commerce website built with Next.js, to learn",
-    link: "https://acme-gamma-five.vercel.app/",
-    technologies: [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "husky",
-      "zod",
-      "postgresql",
-      "...",
-    ],
+    type: "live"
   },
   {
     title: "QuickChat",
     description: "A real-time chat application.",
     link: "https://github.com/weird-samuel/QuickChat",
     technologies: ["JavaScript", "Node.js", "React", "axios", "..."],
+    type: ""
   },
   {
     title: "E-commerce-frontend",
@@ -144,18 +135,21 @@ export const projects = [
       "A frontend for an e-commerce website built with React.js, to learn.",
     link: "https://github.com/weird-samuel/E-commerce-frontend",
     technologies: ["JavaScript", "React", "axios", "..."],
+    type: ""
   },
   {
     title: "Aporvis-Client",
     description: "Frontend for final year project at Babcock University",
     link: "https://aporvs-client.vercel.app/",
     technologies: ["JavaScript", "React", "TailwindCSS", "axios", "..."],
+    type: "live"
   },
   {
     title: "Aporvis-Server",
     description: "Backend for final year project at Babcock University",
     link: "https://github.com/weird-samuel/Aporvis-Server",
     technologies: ["TypeScript", "Node.js", "Express", "MongoDB", "..."],
+    type: ""
   },
   {
     title: "NerfedFlix",
@@ -171,5 +165,6 @@ export const projects = [
       "notistack",
       "...",
     ],
+    type: "live"
   },
 ];

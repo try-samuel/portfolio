@@ -26,7 +26,7 @@ export function Experiences({ experiences }: ExperiencesProps) {
           <div
             key={index}
             className="mt-5 w-full md:w-[95%]"
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             data-aos-duration="700"

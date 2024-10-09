@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import date from "@/lib/date";
-import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 import SocialLinks from "../ui/SocialLinks";
 import { socialLinks } from "@/lib/data";
 import Logo from "../ui/logo";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,9 +26,8 @@ export default function Footer() {
           </h6>
         </div>
         <div
-          className={`svg w-32 h-32 lg:w-64 lg:h-64 rounded-full border-2 border-[#060608] dark:border-[#bebec5] flex items-center justify-center p-10 transition-all duration-300 ease-in-out ${
-            isHovered ? "bg-[#060608] dark:bg-[#BFBFC6] cursor-ew-resize" : ""
-          }`}
+          className={`svg w-32 h-32 lg:w-64 lg:h-64 rounded-full border-2 border-[#060608] dark:border-[#bebec5] flex items-center justify-center p-10 transition-all duration-300 ease-in-out ${isHovered ? "bg-[#060608] dark:bg-[#BFBFC6] cursor-ew-resize" : ""
+            }`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -36,7 +36,7 @@ export default function Footer() {
               Hire Me
             </span>
           ) : (
-            <GoArrowRight className="text-[80px]" />
+            <HiArrowLongRight className="text-[100px] font-thin" />
           )}
         </div>
       </Link>

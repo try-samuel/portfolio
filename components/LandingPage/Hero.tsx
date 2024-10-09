@@ -24,7 +24,7 @@ export default function Hero() {
       <Link
         href={"mailto:fiyinfoluwasamuel580@gmail.com"}
         target="_blank"
-        className="flex gap-2 items-center text-sm border border-[#7e7e97] rounded-md px-6 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-300 mb-10 ease-in w-32"
+        className="flex justify-between items-center text-sm border-2 border-[#7e7e97] rounded-3xl px-5 py-3 hover:bg-[#7e7e97] hover:text-[#09090B] transition-all duration-300 mb-10 ease-in max-w-[120px]"
       >
         Hire Me <AiOutlineArrowRight />
       </Link>

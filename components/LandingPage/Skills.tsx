@@ -17,7 +17,7 @@ export default function Skills({ skills }: { skills: string[] }) {
       </div>
       {/* <div className="relative lg:w-[60%] my-5 lg:h-32">
         <Image
-          src={"https://ghchart.rshah.org/weird-samuel"}
+          src={"https://ghchart.rshah.org/try-samuel"}
           fill
           alt="my gh chart"
         />

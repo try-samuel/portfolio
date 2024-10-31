@@ -2,15 +2,17 @@ export const expereince = [
   {
     title: "Frontend Developer",
     company_name: "Taiwo Salam & Co. Properties LTD.",
-    period: "Aug 2024 - Present",
-    description: "Played a pivotal role in the ongoing development of an in-house project, focusing on building user interfaces and managing dynamic content display. Leveraged state management and secure authentication integration to ensure a seamless user experience. As a key member of the frontend development team, I meticulously crafted interfaces that adhered to design specifications, significantly enhancing the project speed and overall efficiency.",
-    location: "Ibadan, Nigeria",
+    period: "Aug 2024 - October 31 2024",
+    description:
+      "Played a pivotal role in the ongoing development of an in-house project, focusing on building user interfaces and managing dynamic content display. Leveraged state management and secure authentication integration to ensure a seamless user experience. As a key member of the frontend development team, I meticulously crafted interfaces that adhered to design specifications, significantly enhancing the project speed and overall efficiency.",
+    location: "Ibadan, Nigeria (Contract)",
   },
   {
     title: "Web Developer",
     company_name: "Rescue1 Youth Club",
     period: "Aug 2024 - Present",
-    description: "Tasked with completely re-building the user interface and managing content display, I successfully revamped the website to elevate the company's visibility through an improved user interface and optimized SEO configuration. Currently engaged in ongoing efforts to enhance the overall performance and usability of the web application, ensuring a top-notch experience for users.",
+    description:
+      "Tasked with completely re-building the user interface and managing content display, I successfully revamped the website to elevate the company's visibility through an improved user interface and optimized SEO configuration. Currently engaged in ongoing efforts to enhance the overall performance and usability of the web application, ensuring a top-notch experience for users.",
     location: "Remote, USA",
   },
   {
@@ -89,7 +91,7 @@ export const projects = [
     description: "A website for a Canadian Foster care company.",
     link: "https://sardioncare.ca",
     technologies: ["Javascript", "Ejs", "CSS", "Node.JS", "Express", "..."],
-    type: "live"
+    type: "live",
   },
   {
     title: "My Portfolio",
@@ -97,7 +99,7 @@ export const projects = [
       "A personal portfolio website showcasing my projects, skills, and experiences.",
     link: "https://adekunlesamuel.me",
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
-    type: "live"
+    type: "live",
   },
   {
     title: "Buy Me Zobo",
@@ -112,7 +114,7 @@ export const projects = [
       "docker",
       "...",
     ],
-    type: "live"
+    type: "live",
   },
   {
     title: "FavJay",
@@ -120,14 +122,14 @@ export const projects = [
       "Personal website for FavJay The Roadman, a Nigerian musical artist.",
     link: "https://favjaytrm.com",
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
-    type: "live"
+    type: "live",
   },
   {
     title: "QuickChat",
     description: "A real-time chat application.",
     link: "https://github.com/weird-samuel/QuickChat",
     technologies: ["JavaScript", "Node.js", "React", "axios", "..."],
-    type: ""
+    type: "",
   },
   {
     title: "E-commerce-frontend",
@@ -135,21 +137,21 @@ export const projects = [
       "A frontend for an e-commerce website built with React.js, to learn.",
     link: "https://github.com/weird-samuel/E-commerce-frontend",
     technologies: ["JavaScript", "React", "axios", "..."],
-    type: ""
+    type: "",
   },
   {
     title: "Aporvis-Client",
     description: "Frontend for final year project at Babcock University",
     link: "https://aporvs-client.vercel.app/",
     technologies: ["JavaScript", "React", "TailwindCSS", "axios", "..."],
-    type: "live"
+    type: "live",
   },
   {
     title: "Aporvis-Server",
     description: "Backend for final year project at Babcock University",
     link: "https://github.com/weird-samuel/Aporvis-Server",
     technologies: ["TypeScript", "Node.js", "Express", "MongoDB", "..."],
-    type: ""
+    type: "",
   },
   {
     title: "NerfedFlix",
@@ -165,6 +167,6 @@ export const projects = [
       "notistack",
       "...",
     ],
-    type: "live"
+    type: "live",
   },
 ];

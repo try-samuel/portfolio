@@ -10,7 +10,7 @@ export const expereince = [
   {
     title: "Web Developer",
     company_name: "Rescue1 Youth Club",
-    period: "Aug 2024 - Present",
+    period: "Aug 2024 - Nov 2024",
     description:
       "Tasked with completely re-building the user interface and managing content display, I successfully revamped the website to elevate the company's visibility through an improved user interface and optimized SEO configuration. Currently engaged in ongoing efforts to enhance the overall performance and usability of the web application, ensuring a top-notch experience for users.",
     location: "Remote, USA",

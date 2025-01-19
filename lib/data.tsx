@@ -103,6 +103,24 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Cluster",
+    description:
+      "A collaborative whiteboard application for remote teams to brainstorm and share ideas.",
+    link: "https://clusterthecollaborativeapp.vercel.app/",
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "Clerk",
+      "convex",
+      "liveblocks",
+      "zustand",
+      "perfect-freehand",
+      "react-contenteditable",
+    ],
+    type: "live",
+  },
+  {
     title: "SarionCare",
     description: "A website for a Canadian Foster care company.",
     link: "https://sardioncare.ca",

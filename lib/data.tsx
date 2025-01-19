@@ -1,5 +1,13 @@
 export const expereince = [
   {
+    title: "Frontend Engineer (Lead Engineer)",
+    company_name: "AfraB",
+    period: "Jan 2025 - Present",
+    description:
+      "Leding development teams across mobile web and backend initiatives, while collaborating on frontend architecture decisions and implementation. Worked closely with the design team to enhance user experience and implement responsive design principles. Drove performance optimization efforts and established quality standards through active code review participation. Managed team resource allocation and tooling setup, ensuring efficient development workflows.",
+    location: "Remote, Nigeria",
+  },
+  {
     title: "Frontend Engineer",
     company_name: "Tizela",
     period: "Oct 2024 - Present",

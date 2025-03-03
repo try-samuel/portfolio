@@ -5,12 +5,6 @@ import { InterTight } from "@/lib/fonts";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  verification: {
-    google: "LoPQr96cfszDq0ETtZIr5zkfxpAGEK4XV-cbkzNfUpQ",
-    other: {
-      pinterest: "82cc1e9d13144eec1b82487daa74f595",
-    },
-  },
   title: "Adekunle Samuel Fiyinfoluwa",
   description:
     "Software Engineer, Full Stack Web Developer, and Open Source Enthusiast",
@@ -32,13 +26,13 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Adekunle Samuel Fiyinfoluwa",
-      url: "https://portfolio-adekunle-samuel.vercel.app/",
+      url: "https://fiyin.ng/",
     },
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-adekunle-samuel.vercel.app/",
+    url: "https://fiyin.ng/",
     description: "This is my portfolio website guys, check it out!",
     images: [
       {

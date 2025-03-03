@@ -131,7 +131,7 @@ export const projects = [
     title: "My Portfolio",
     description:
       "A personal portfolio website showcasing my projects, skills, and experiences.",
-    link: "https://adekunlesamuel.me",
+    link: "https://fiyin.ng",
     technologies: ["TypeScript", "Next.js", "TailwindCSS"],
     type: "live",
   },

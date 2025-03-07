@@ -138,7 +138,7 @@ export const projects = [
   {
     title: "Buy Me Zobo",
     description: "comning soon...",
-    link: "",
+    link: "https://www.buymezobo.ng/",
     technologies: [
       "TypeScript",
       "Next.js",
@@ -149,6 +149,14 @@ export const projects = [
       "...",
     ],
     type: "live",
+  },
+  {
+    title: "WiseCrack",
+    description:
+      "First Mobile dev attempt - An AI-powered problem solver with a tard bit of mood monitoring also aimed to crack a joke upon successful completion of a task.",
+    link: "https://github.com/try-samuel/WiseCrack",
+    technologies: ["TypeScript", "Expo", "react-native", "OpenAI"],
+    type: "",
   },
   {
     title: "FavJay",

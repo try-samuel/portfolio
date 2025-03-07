@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="lg:px-8 pt-52 lg:pt-10">
       <h1
         className={`text-2xl font-normal leading-[30px] font-sans mb-5`}
-        data-aos="flip-left"
+        data-aos="fade-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
       >

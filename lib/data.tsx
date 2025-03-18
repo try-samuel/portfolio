@@ -1,10 +1,10 @@
-export const expereince = [
+export const experience = [
   {
     title: "Frontend Engineer (Lead Engineer)",
     company_name: "AfraB",
     period: "Jan 2025 - Present",
     description:
-      "Leding development teams across mobile web and backend initiatives, while collaborating on frontend architecture decisions and implementation. Worked closely with the design team to enhance user experience and implement responsive design principles. Drove performance optimization efforts and established quality standards through active code review participation. Managed team resource allocation and tooling setup, ensuring efficient development workflows.",
+      "Leading development teams across mobile web and backend initiatives, while collaborating on frontend architecture decisions and implementation. Worked closely with the design team to enhance user experience and implement responsive design principles. Drove performance optimization efforts and established quality standards through active code review participation. Managed team resource allocation and tooling setup, ensuring efficient development workflows.",
     location: "Remote, Nigeria",
   },
   {
@@ -12,7 +12,7 @@ export const expereince = [
     company_name: "Tizela",
     period: "Oct 2024 - Present",
     description:
-      "Tasked with  building the user interface for the company's upcoming project, I took a lead role in shaping user, host, and admin areas, with a strong emphasis on the admin dashboard. My contributions included developing robust authentication integration, enhancing security protocols, and implementing intuitive tools for content management and analytics. These features streamlined workflows for internal teams, improving accessibility and efficiency across the board. This work laid the foundation for a seamless, secure experience for both end-users and administrators, supporting the project's scalability and long-term success.",
+      "Tasked with building the user interface for the company's upcoming project, I took a lead role in shaping user, host, and admin areas, with a strong emphasis on the admin dashboard. My contributions included developing robust authentication integration, enhancing security protocols, and implementing intuitive tools for content management and analytics. These features streamlined workflows for internal teams, improving accessibility and efficiency across the board. This work laid the foundation for a seamless, secure experience for both end-users and administrators, supporting the project's scalability and long-term success.",
     location: "Remote, Nigeria",
   },
   {
@@ -52,14 +52,14 @@ export const expereince = [
     company_name: "Alusoft Technologies ltd.",
     period: "Jan 2023 - Jun 2023",
     description:
-      "Developed a Nodejs Web app exclusively for company use, streamlining the online management of students, staff and course allocation. Collaborated with other interns and an instructor to conduct user research and iterated on design for optimal functionality, resulting in a substantial increase in user satisfaction. Implemented the web application, achieving a more efficient working environment for staff.",
+      "Developed a Node.js Web app exclusively for company use, streamlining the online management of students, staff and course allocation. Collaborated with other interns and an instructor to conduct user research and iterated on design for optimal functionality, resulting in a substantial increase in user satisfaction. Implemented the web application, achieving a more efficient working environment for staff.",
     location: "Ibadan, Nigeria",
   },
 ];
 
 export const education = [
   {
-    school: "Babcock Unversity",
+    school: "Babcock University",
     degree: "Bachelor's Degree in Computer Science (4.16 CGPA btw)",
     period: "Sept 2020 - July 2024",
     location: "Ilishan-Remo, Nigeria",
@@ -137,7 +137,7 @@ export const projects = [
   },
   {
     title: "Buy Me Zobo",
-    description: "comning soon...",
+    description: "coming soon...",
     link: "https://www.buymezobo.ng/",
     technologies: [
       "TypeScript",
@@ -153,7 +153,7 @@ export const projects = [
   {
     title: "WiseCrack",
     description:
-      "First Mobile dev attempt - An AI-powered problem solver with a tard bit of mood monitoring also aimed to crack a joke upon successful completion of a task.",
+      "First Mobile dev attempt - An AI-powered problem solver with a tad bit of mood monitoring also aimed to crack a joke upon successful completion of a task.",
     link: "https://github.com/try-samuel/WiseCrack",
     technologies: ["TypeScript", "Expo", "react-native", "OpenAI"],
     type: "",

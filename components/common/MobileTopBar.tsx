@@ -15,7 +15,7 @@ export default function MobileTopBar() {
 
   const navItems: { title: string; href: string }[] = [
     { title: "Projects", href: "/projects" },
-    // Conditionally add the "Experience" nav item
+    { title: "Links", href: "https://links.fiyin.ng/" },
     { title: "Hire Me", href: "mailto:fiyinfoluwasamuel580@gmail.com" },
   ];
 

@@ -16,7 +16,7 @@ export default function MobileTopBar() {
   const navItems: { title: string; href: string }[] = [
     { title: "Projects", href: "/projects" },
     { title: "Links", href: "https://links.fiyin.ng/" },
-    { title: "Hire Me", href: "mailto:fiyinfoluwasamuel580@gmail.com" },
+    { title: "Hire Me", href: "mailto:hello@fiyin.ng" },
   ];
 
   const navComp = (

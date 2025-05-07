@@ -2,7 +2,7 @@ export const experience = [
   {
     title: "Frontend Engineer (Lead Engineer)",
     company_name: "AfraB",
-    period: "Jan 2025 - Present",
+    period: "Jan 2025 - May 2025",
     description:
       "Leading development teams across mobile web and backend initiatives, while collaborating on frontend architecture decisions and implementation. Worked closely with the design team to enhance user experience and implement responsive design principles. Drove performance optimization efforts and established quality standards through active code review participation. Managed team resource allocation and tooling setup, ensuring efficient development workflows.",
     location: "Remote, Nigeria",
@@ -10,7 +10,7 @@ export const experience = [
   {
     title: "Frontend Engineer",
     company_name: "Tizela",
-    period: "Oct 2024 - Present",
+    period: "Oct 2024 - May 2025",
     description:
       "Tasked with building the user interface for the company's upcoming project, I took a lead role in shaping user, host, and admin areas, with a strong emphasis on the admin dashboard. My contributions included developing robust authentication integration, enhancing security protocols, and implementing intuitive tools for content management and analytics. These features streamlined workflows for internal teams, improving accessibility and efficiency across the board. This work laid the foundation for a seamless, secure experience for both end-users and administrators, supporting the project's scalability and long-term success.",
     location: "Remote, Nigeria",
@@ -102,6 +102,22 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Turva",
+    description:
+      "A crowd-sourced safety platform to deliver instant, AI-interpreted danger alerts, enhancing community awareness and response. Built with a Golang backend and React frontend, providing clear, actionable notifications and suggested next steps.",
+    link: "https://turva.co",
+    technologies: [
+      "Golang",
+      "React",
+      "TailwindCSS",
+      "Socket.io",
+      "Gemini",
+      "leaflet",
+      "...",
+    ],
+    type: "live",
+  },
   {
     title: "Cluster",
     description:

@@ -73,7 +73,7 @@ export const socialLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/samuel-adekunle-a995a8213/",
+    link: "https://www.linkedin.com/in/adekunle-samuel-fiyinfoluwa/",
   },
   {
     name: "X",
@@ -91,6 +91,9 @@ export const skills = [
   "Node.Js",
   "TailwindCSS",
   "Docker",
+  "Dokku",
+  "GCP",
+  "Contabo",
   "PostgreSQL",
   "MongoDB",
   "MySQL/MariaDB",

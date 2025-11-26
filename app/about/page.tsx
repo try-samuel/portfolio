@@ -1,8 +1,16 @@
-"use client";
+
 
 import Image from "next/image";
 import { EXPERIENCE, EDUCATION, SKILLS } from "@/app/constants/data";
 import Footer from "@/components/common/Footer";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn more about Adekunle Samuel Fiyinfoluwa, a Full Stack Software Engineer with a passion for building scalable web applications.",
+};
 
 export default function AboutPage() {
   return (

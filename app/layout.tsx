@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers/theme-provider";
-import { InterTight } from "@/lib/fonts";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import SmoothScroll from "@/components/SmoothScroll";
+import CustomCursor from "@/components/ui/CustomCursor";
+import Header from "@/components/common/Header";
+import JsonLd from "@/components/JsonLd";
+import { Manrope } from "next/font/google";
+
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adekunle Samuel Fiyinfoluwa",
+  metadataBase: new URL("https://fiyin.ng"),
+  title: {
+    default: "Adekunle Samuel Fiyinfoluwa",
+    template: "%s | Adekunle Samuel Fiyinfoluwa",
+  },
   description:
-    "Samuel, A Full-stack Software Engineer, Full Stack Web Developer, and Open Source Enthusiast",
+    "Samuel, A Full-stack Software Engineer, Full Stack Web Developer, and Open Source Enthusiast. Building products that scale in the modern web.",
   keywords: [
     "Adekunle Samuel",
     "Adekunle Fiyinfoluwa",
@@ -74,18 +82,15 @@ export const metadata: Metadata = {
     "Bun.js Developer",
     "Edge Computing Engineer",
   ],
-  robots: "index, follow",
-  authors: [
-    {
-      name: "Adekunle Samuel Fiyinfoluwa",
-      url: "https://fiyin.ng/",
-    },
-  ],
+  authors: [{ name: "Adekunle Samuel Fiyinfoluwa", url: "https://fiyin.ng" }],
+  creator: "Adekunle Samuel Fiyinfoluwa",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://fiyin.ng/",
+    url: "https://fiyin.ng",
+    title: "Adekunle Samuel Fiyinfoluwa",
     description: "This is my portfolio website guys, check it out!",
+    siteName: "Adekunle Samuel Fiyinfoluwa",
     images: [
       {
         url: "https://i.pinimg.com/736x/b7/c6/50/b7c65051b225e4bcee2a961ee5eebe67.jpg",
@@ -95,6 +100,26 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adekunle Samuel Fiyinfoluwa",
+    description: "This is my portfolio website guys, check it out!",
+    images: [
+      "https://i.pinimg.com/736x/b7/c6/50/b7c65051b225e4bcee2a961ee5eebe67.jpg",
+    ],
+    creator: "@try_samuell",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -103,19 +128,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
-      <body
-        suppressHydrationWarning={true}
-        className={`${InterTight.className} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+    <html lang="en" className="dark">
+      <body className={`${manrope.className} antialiased bg-background text-foreground`}>
+        <SmoothScroll>
+          <CustomCursor />
+          <Header />
           <main>{children}</main>
-        </ThemeProvider>
+          <JsonLd />
+        </SmoothScroll>
       </body>
     </html>
   );

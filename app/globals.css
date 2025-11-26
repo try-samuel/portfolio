@@ -4,49 +4,20 @@
 
 @layer base {
   :root {
-    --background: 217.5 66.67% 97.65%;
-    --foreground: 240 14.29% 2.75%;
+    /* Dark Theme by Default (Snellenberg Style) */
+    --background: 225 6% 12%;
+    /* #1C1D20 */
+    --foreground: 0 0% 95%;
+    /* #F2F2F2 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 225 6% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 225 6% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240, 14%, 3%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 240 5.79% 76.27%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 225 6% 12%;
 
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -54,8 +25,9 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 100%;
+    /* White */
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -63,6 +35,8 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
   }
 }
 
@@ -71,46 +45,82 @@
     @apply border-border;
   }
 
+  html,
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Custom cursor only on desktop */
+  @media (min-width: 768px) {
+
+    html,
+    body {
+      cursor: none;
+    }
+  }
 }
 
-.circle {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border: 1.5px solid white;
+/* Custom Cursor Styles */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: white;
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: difference;
+}
+
+/* Curve Page Transition */
+.page.curve .background {
+  position: fixed;
+  height: calc(100vh + 600px);
+  width: 100%;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  background-color: #1C1D20 !important;
+  z-index: 99;
+  transition: opacity 0s linear 0.1s;
+}
+
+.page.curve .route {
+  position: absolute;
+  left: 50%;
+  top: 40%;
   color: white;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 46px;
+  z-index: 100;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
-@keyframes rotate {
-
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(-35deg);
-  }
+.page.curve svg {
+  position: fixed;
+  height: calc(100vh + 600px);
+  width: 100%;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 99;
 }
 
-.svg {
-  animation: rotate 4.2s infinite ease-in-out;
-}
-
-.svg:hover {
-  animation: none;
-  transform: rotate(0deg);
+.page.curve svg path {
+  fill: #1C1D20;
 }

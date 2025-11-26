@@ -12,8 +12,8 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
-    technologies?: string[];
+    href: string;
+    tech?: string[];
     type: string;
   }[];
   className?: string;
@@ -29,8 +29,8 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <Link
-          href={item?.link}
-          key={item?.link}
+          href={item?.href}
+          key={item?.href}
           target="_blank"
           className="relative group block p-1 h-[220px] w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -55,16 +55,16 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle className="flex items-center justify-between">
-              <span className="group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+              <span className="group-hover:text-zinc-900 dark:group-hover:text-white transition-colors duration-300">
                 {item.title}
               </span>
-              <span className="text-slate-400 dark:text-slate-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+              <span className="text-slate-400 dark:text-slate-500 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors duration-300">
                 {item.type != "live" ? <BsCodeSlash /> : <IoEyeOutline />}
               </span>
             </CardTitle>
             <CardDescription>{item.description}</CardDescription>
-            {item.technologies && (
-              <CardTechnologies technologies={item.technologies} />
+            {item.tech && (
+              <CardTechnologies technologies={item.tech} />
             )}
           </Card>
         </Link>

@@ -1,55 +1,112 @@
-import React, { useState } from "react";
-import date from "@/lib/date";
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
-import SocialLinks from "../ui/SocialLinks";
-import { socialLinks } from "@/lib/data";
-import Logo from "../ui/logo";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { HiArrowLongRight } from "react-icons/hi2";
+import MagneticButton from "./MagneticButton";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [time, setTime] = useState("");
+  const currentYear = new Date().getFullYear();
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+        timeZone: "Africa/Lagos",
+        timeZoneName: "short",
+      });
+      setTime(timeString);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="space-y-10 my-10 mt-20">
-      <Link
-        href={"mailto:fiyinfoluasamuel580@gmail.com"}
-        target="_blank"
-        className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-1/2 lg:w-full"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="3000"
-      >
-        <div>
-          <h6 className="text-5xl lg:text-8xl font-medium">
-            Let&rsquo;s Collaborate
-          </h6>
+    <footer className="container mx-auto px-8 md:px-20 lg:px-40 py-20 bg-background text-foreground overflow-hidden">
+      <div className="flex flex-col items-center justify-center mb-20">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 mb-10">
+          <h2 className="text-5xl md:text-8xl font-normal">Let&apos;s</h2>
+          <div className="relative w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden mt-2">
+            <Image
+              src="/images/avatar-new.jpg"
+              fill
+              alt="Avatar"
+              className="object-cover"
+            />
+          </div>
+          <h2 className="text-5xl md:text-8xl font-normal">work</h2>
+          <h2 className="text-5xl md:text-8xl font-normal">together</h2>
         </div>
-        <div
-          className={`svg w-32 h-32 lg:w-64 lg:h-64 rounded-full border-2 border-[#060608] dark:border-[#bebec5] flex items-center justify-center p-10 transition-all duration-300 ease-in-out ${isHovered ? "bg-[#060608] dark:bg-[#BFBFC6] cursor-ew-resize" : ""
-            }`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          {isHovered ? (
-            <span className="text-2xl text-[#BFBFC6] dark:text-[#060608]">
-              Hire Me
-            </span>
-          ) : (
-            <HiArrowLongRight className="text-[100px] font-thin" />
-          )}
+
+        <div className="relative z-10">
+          <Link href="/contact">
+            <MagneticButton className="w-[180px] h-[180px] rounded-full bg-white text-black flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110">
+              <span className="text-lg font-medium">Get in touch</span>
+            </MagneticButton>
+          </Link>
         </div>
-      </Link>
-      <SocialLinks items={socialLinks} />
-      <footer className="flex justify-between w-full">
-        <Logo />
-        <div className="text-[#61616E] dark:text-[#545460]">
-          <span className="mr-3">
-            &copy; <span className="text-[#BFBFC6]">Samuel Adekunle</span>
-          </span>
-          {date}
+
+        <div className="flex flex-col md:flex-row gap-4 mt-16 z-10">
+          <MagneticButton className="px-8 py-4 rounded-full border border-white/20 bg-transparent text-white hover:bg-white hover:text-black transition-colors duration-300">
+            <span className="text-sm">hello@fiyin.ng</span>
+          </MagneticButton>
+          <MagneticButton className="px-8 py-4 rounded-full border border-white/20 bg-transparent text-white hover:bg-white hover:text-black transition-colors duration-300">
+            <span className="text-sm">+2348152819194</span>
+          </MagneticButton>
         </div>
-      </footer>
-    </section>
+      </div>
+
+      <div className="pt-10 border-t border-white/20 text-gray-400 text-xs uppercase tracking-wider">
+        {/* Desktop Layout */}
+        <div className="hidden md:flex md:flex-row md:justify-between md:items-end">
+          <div className="flex flex-col gap-2">
+            <span>Version</span>
+            <span className="text-white">{currentYear} Edition</span>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span>Local Time</span>
+            <span className="text-white">{time}</span>
+          </div>
+          <div className="flex flex-col gap-2 items-end">
+            <span>Socials</span>
+            <div className="flex gap-4 text-white">
+              <a href="https://links.fiyin.ng" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Links</a>
+              <a href="https://www.github.com/try-samuel" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">GitHub</a>
+              <a href="https://www.x.com/try_samuell" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">X</a>
+              <a href="https://www.linkedin.com/in/adekunle-samuel-fiyinfoluwa" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="flex md:hidden flex-col items-center">
+          <div className="flex justify-center gap-8 mb-6">
+            <div className="flex flex-col gap-2">
+              <span>Version</span>
+              <span className="text-white">{currentYear} Edition</span>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span>Local Time</span>
+              <span className="text-white">{time}</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 items-center">
+            <span>Socials</span>
+            <div className="flex gap-4 text-white">
+              <a href="https://links.fiyin.ng" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Links</a>
+              <a href="https://www.github.com/try-samuel" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">GitHub</a>
+              <a href="https://www.x.com/try_samuell" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">X</a>
+              <a href="https://www.linkedin.com/in/adekunle-samuel-fiyinfoluwa" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }

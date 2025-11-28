@@ -1,5 +1,17 @@
 export const PROJECTS = [
   {
+    title: "Nth2Prove",
+    type: "E-commerce",
+    year: "2025",
+    src: "/images/nth2prove.png",
+    href: "https://www.nth2prove.shop/",
+    client: "Nth2Prove",
+    location: "Nigeria",
+    services: ["Full Stack Development", "E-commerce",],
+    description: "A comprehensive e-commerce platform for Nth2Prove, a Nigerian streetwear brand. Featuring product and stock management, and a dynamic shopping experience with real-time stock updates.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Prisma", "NextAuth", "Zustand", "Paystack", "React Query"]
+  },
+  {
     title: "Turva",
     type: "Development",
     year: "2025",

@@ -13,7 +13,6 @@ export default function TopBar() {
 
   // Define an array of navigation items
   const navItems: { title: string; href: string }[] = [
-    { title: "Projects", href: "/projects" },
     { title: "Links", href: "https://links.fiyin.ng/" },
     { title: "Hire Me", href: "mailto:hello@fiyin.ng" },
   ];
@@ -35,9 +34,8 @@ export default function TopBar() {
           <Link
             key={index}
             href={item.href}
-            className={`hover:text-[#7e7e97] transition-all duration-300 ${
-              pathname === item.href ? "text-[#7e7e97]" : ""
-            }`}
+            className={`hover:text-[#7e7e97] transition-all duration-300 ${pathname === item.href ? "text-[#7e7e97]" : ""
+              }`}
           >
             {item.title}
           </Link>

@@ -14,7 +14,6 @@ export default function MobileTopBar() {
   };
 
   const navItems: { title: string; href: string }[] = [
-    { title: "Projects", href: "/projects" },
     { title: "Links", href: "https://links.fiyin.ng/" },
     { title: "Hire Me", href: "mailto:hello@fiyin.ng" },
   ];
@@ -29,9 +28,8 @@ export default function MobileTopBar() {
           <Link
             key={index}
             href={item.href}
-            className={`hover:text-[#7e7e97] transition-all duration-300 w-24 ${
-              pathname === item.href ? "text-[#7e7e97]" : ""
-            } block py-4 text-lg`}
+            className={`hover:text-[#7e7e97] transition-all duration-300 w-24 ${pathname === item.href ? "text-[#7e7e97]" : ""
+              } block py-4 text-lg`}
           >
             {item.title}
           </Link>
@@ -43,14 +41,12 @@ export default function MobileTopBar() {
 
   return (
     <section
-      className={`fixed top-0 left-0 right-0 w-full bg-[#F5F8FD] dark:bg-[#09090B] z-50 ${
-        isOpen ? "h-1/2" : ""
-      }`}
+      className={`fixed top-0 left-0 right-0 w-full bg-[#F5F8FD] dark:bg-[#09090B] z-50 ${isOpen ? "h-1/2" : ""
+        }`}
     >
       <div
-        className={`${
-          isOpen ? "w-[85%]" : ""
-        } py-6 mx-auto items-center transition-all duration-500 container z-10`}
+        className={`${isOpen ? "w-[85%]" : ""
+          } py-6 mx-auto items-center transition-all duration-500 container z-10`}
       >
         <div className={`flex w-full justify-between ${isOpen ? "mb-10" : ""}`}>
           <Logo />

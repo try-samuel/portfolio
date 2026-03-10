@@ -1,5 +1,17 @@
 export const PROJECTS = [
   {
+    title: "Port Tray",
+    type: "Desktop Application",
+    year: "2026",
+    src: "/images/port-tray.png",
+    href: "https://github.com/try-samuel/port-tray",
+    client: "Personal",
+    location: "Nigeria",
+    services: ["Desktop Development", "System Tools"],
+    description: "A cross-platform system tray application to monitor and manage listening TCP ports. Built with Tauri and Rust, it features process management, real-time updates, and a clean dark interface.",
+    tech: ["Rust", "Tauri", "TypeScript", "HTML", "CSS"]
+  },
+  {
     title: "Nth2Prove",
     type: "E-commerce",
     year: "2025",

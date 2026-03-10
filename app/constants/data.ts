@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     title: "Port Tray",
-    type: "Desktop Application",
+    type: "Development",
     year: "2026",
     src: "/images/port-tray.png",
     href: "https://github.com/try-samuel/port-tray",

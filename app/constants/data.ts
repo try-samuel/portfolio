@@ -1,5 +1,17 @@
 export const PROJECTS = [
   {
+    title: "CalJam",
+    type: "Browser Extension",
+    year: "2026",
+    src: "/images/caljam.png",
+    href: "https://caljam.fiyin.ng",
+    client: "Personal",
+    location: "Nigeria",
+    services: ["Chrome Extension", "OAuth Integration", "Static Site"],
+    description: "A Manifest V3 Chrome extension that connects to Google Calendar and plays a selected theme song before upcoming meetings. Built with secure Google OAuth, local audio storage, background reminders, and a public verification site.",
+    tech: ["JavaScript", "Manifest V3", "Google Calendar API", "Chrome APIs", "Vercel"]
+  },
+  {
     title: "Port Tray",
     type: "Development",
     year: "2026",

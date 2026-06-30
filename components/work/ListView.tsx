@@ -47,8 +47,8 @@ export default function ListView({ filter }: ListViewProps) {
       >
         {/* Table Header */}
         <div className="hidden md:grid md:grid-cols-4 gap-8 pb-6 border-b border-white/20 text-xs uppercase tracking-wider text-gray-400">
+          <div>Project</div>
           <div>Client</div>
-          <div>Location</div>
           <div>Services</div>
           <div className="text-right">Year</div>
         </div>
@@ -67,10 +67,10 @@ export default function ListView({ filter }: ListViewProps) {
             }}
           >
             <div className="text-2xl md:text-3xl font-normal text-white">
-              {project.client}
+              {project.title}
             </div>
             <div className="text-sm md:text-base text-gray-300">
-              {project.location}
+              {project.client}
             </div>
             <div className="text-sm md:text-base text-gray-300">
               {project.services.join(", ")}

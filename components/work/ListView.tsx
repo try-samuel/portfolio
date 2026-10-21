@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { PROJECTS } from "@/app/constants/data";
+import { trackPortfolioEvent } from "@/lib/ferno";
 
 interface ListViewProps {
   filter: 'all' | 'design' | 'development';
@@ -60,6 +61,12 @@ export default function ListView({ filter }: ListViewProps) {
             key={index}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              trackPortfolioEvent('Project Opened', {
+                project: project.title,
+                view: 'list',
+              })
+            }
             className="group border-b border-white/20 py-8 md:py-12 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 cursor-pointer transition-all duration-300 hover:opacity-50"
             onMouseEnter={() => {
               setActiveProject(index);

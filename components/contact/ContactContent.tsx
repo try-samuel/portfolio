@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import MagneticButton from '@/components/common/MagneticButton';
 import { useState } from 'react';
 import { web3apikey } from '@/app/constants/data';
+import { trackPortfolioEvent } from '@/lib/ferno';
 
 export default function ContactContent() {
     const { register, handleSubmit, reset } = useForm();
@@ -29,14 +30,17 @@ export default function ContactContent() {
 
             if (result.success) {
                 setStatus('Message Sent!');
+                trackPortfolioEvent('Contact Form Succeeded');
                 reset();
                 setTimeout(() => setStatus(''), 5000);
             } else {
                 setStatus('Error. Try again.');
+                trackPortfolioEvent('Contact Form Failed');
             }
         } catch (error) {
             console.error("Form submission error:", error);
             setStatus('Error. Try again.');
+            trackPortfolioEvent('Contact Form Failed');
         }
     };
 

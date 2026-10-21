@@ -1,7 +1,7 @@
 import { AnalyticsBrowser } from '@fernohq/analytics-next';
 
 const projectKey = process.env.NEXT_PUBLIC_FERNO_API_KEY;
-const apiUrl = process.env.NEXT_PUBLIC_FERNO_API_URL || 'https://api.useferno.com';
+const apiUrl = process.env.NEXT_PUBLIC_FERNO_API_URL || 'https://data.useferno.com';
 const sessionStorageKey = 'ferno_portfolio_session';
 const sessionIdleTimeout = 30 * 60 * 1000;
 

@@ -148,7 +148,7 @@ function getAnalytics() {
       },
       {
         instrumentation: {
-          autocapture: true,
+          autocapture: false,
           rageClicks: true,
           deadClicks: true,
           navigation: { enabled: true, hash: false },

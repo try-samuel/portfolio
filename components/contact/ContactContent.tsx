@@ -1,15 +1,17 @@
 'use client';
 import { useForm } from 'react-hook-form';
 import MagneticButton from '@/components/common/MagneticButton';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { web3apikey } from '@/app/constants/data';
 import { trackPortfolioEvent } from '@/lib/ferno';
 
 export default function ContactContent() {
     const { register, handleSubmit, reset } = useForm();
     const [status, setStatus] = useState('');
+    const hasStarted = useRef(false);
 
     const onSubmit = async (data: any) => {
+        trackPortfolioEvent('Contact Form Submitted');
         setStatus('Sending...');
 
         try {
@@ -68,7 +70,16 @@ export default function ContactContent() {
 
                 {/* RIGHT COLUMN: The Form */}
                 <div className="relative z-10 mt-10 lg:mt-0">
-                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-12">
+                    <form
+                        data-ph-mask
+                        onSubmit={handleSubmit(onSubmit)}
+                        onFocusCapture={(event) => {
+                            if (hasStarted.current || !event.target.matches('input, textarea, select')) return;
+                            hasStarted.current = true;
+                            trackPortfolioEvent('Contact Form Started');
+                        }}
+                        className="space-y-12"
+                    >
                         <div className="group relative">
                             <label className="text-gray-500 text-sm uppercase ml-4">What&apos;s your name?</label>
                             <input

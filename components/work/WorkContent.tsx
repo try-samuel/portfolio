@@ -5,10 +5,23 @@ import { Grid, List } from "lucide-react";
 import ListView from "@/components/work/ListView";
 import GridView from "@/components/work/GridView";
 import Footer from "@/components/common/Footer";
+import { trackPortfolioEvent } from "@/lib/ferno";
 
 export default function WorkContent() {
     const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
     const [filter, setFilter] = useState<'all' | 'design' | 'development'>('all');
+
+    const chooseFilter = (nextFilter: typeof filter) => {
+        if (nextFilter === filter) return;
+        setFilter(nextFilter);
+        trackPortfolioEvent('Work Filter Changed', { filter: nextFilter });
+    };
+
+    const chooseView = (nextView: typeof viewMode) => {
+        if (nextView === viewMode) return;
+        setViewMode(nextView);
+        trackPortfolioEvent('Work View Changed', { view: nextView });
+    };
 
     return (
         <main className="relative w-full bg-background text-foreground">
@@ -23,7 +36,7 @@ export default function WorkContent() {
                     {/* Filter Pills */}
                     <div className="flex gap-3">
                         <button
-                            onClick={() => setFilter('all')}
+                            onClick={() => chooseFilter('all')}
                             className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${filter === 'all'
                                 ? 'bg-white text-black'
                                 : 'bg-transparent border border-white/20 text-white hover:bg-white/10'
@@ -32,7 +45,7 @@ export default function WorkContent() {
                             All
                         </button>
                         <button
-                            onClick={() => setFilter('design')}
+                            onClick={() => chooseFilter('design')}
                             className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${filter === 'design'
                                 ? 'bg-white text-black'
                                 : 'bg-transparent border border-white/20 text-white hover:bg-white/10'
@@ -41,7 +54,7 @@ export default function WorkContent() {
                             Design
                         </button>
                         <button
-                            onClick={() => setFilter('development')}
+                            onClick={() => chooseFilter('development')}
                             className={`px-6 py-3 rounded-full text-sm transition-all duration-300 ${filter === 'development'
                                 ? 'bg-white text-black'
                                 : 'bg-transparent border border-white/20 text-white hover:bg-white/10'
@@ -54,7 +67,7 @@ export default function WorkContent() {
                     {/* View Toggle */}
                     <div className="hidden md:flex gap-3">
                         <button
-                            onClick={() => setViewMode('list')}
+                            onClick={() => chooseView('list')}
                             className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${viewMode === 'list'
                                 ? 'bg-white text-black'
                                 : 'bg-transparent border border-white/20 text-white hover:bg-white/10'
@@ -64,7 +77,7 @@ export default function WorkContent() {
                             <List size={20} />
                         </button>
                         <button
-                            onClick={() => setViewMode('grid')}
+                            onClick={() => chooseView('grid')}
                             className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${viewMode === 'grid'
                                 ? 'bg-white text-black'
                                 : 'bg-transparent border border-white/20 text-white hover:bg-white/10'

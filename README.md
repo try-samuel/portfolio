@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Ferno analytics
+
+Set the Acme web project's browser API key before building or running the site:
+
+```sh
+NEXT_PUBLIC_FERNO_API_KEY=ferno_pk_your_project_key
+NEXT_PUBLIC_FERNO_API_URL=https://api.useferno.com
+```
+
+Use `.env.local` for local development and set the same variables in the deployment environment. The API URL defaults to `https://api.useferno.com`; override it for a local Ferno API. The project key is sent by the browser, so use only a browser-intended project key and ensure the Ferno API permits this site's origin through CORS. Do not commit a populated environment file.
+
+The site records page views, project-link opens, and contact-form success or failure. Events share a per-tab session ID that rotates after 30 minutes of inactivity. Contact names, email addresses, and messages are not sent to Ferno. With no project key configured, analytics stays disabled.
+
 ## Getting Started
 
 First, run the development server:

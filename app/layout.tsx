@@ -4,6 +4,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Header from "@/components/common/Header";
 import JsonLd from "@/components/JsonLd";
+import FernoPageTracker from "@/components/FernoPageTracker";
 import { Manrope } from "next/font/google";
 
 const manrope = Manrope({ subsets: ["latin"] });
@@ -130,6 +131,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${manrope.className} antialiased bg-background text-foreground`}>
+        <FernoPageTracker />
         <SmoothScroll>
           <CustomCursor />
           <Header />

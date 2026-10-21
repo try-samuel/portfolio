@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PROJECTS } from '@/app/constants/data';
+import { trackPortfolioEvent } from '@/lib/ferno';
 
 interface GridViewProps {
   filter: 'all' | 'design' | 'development';
@@ -21,7 +22,19 @@ export default function GridView({ filter }: GridViewProps) {
     <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-10 pb-40">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
         {filteredProjects.map((project, index) => (
-          <Link href={project.href || '#'} key={index} target="_blank" rel="noopener noreferrer" className="block group">
+          <Link
+            href={project.href || '#'}
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group"
+            onClick={() =>
+              trackPortfolioEvent('Project Opened', {
+                project: project.title,
+                view: 'grid',
+              })
+            }
+          >
             <motion.div
               className="relative w-full aspect-[4/3] overflow-hidden rounded-lg bg-gray-800 z-10"
               initial={{ opacity: 0, y: 20 }}
